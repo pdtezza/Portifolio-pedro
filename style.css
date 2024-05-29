@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+html {
+    scroll-behavior: smooth;
+    }
+body {
+    background-color: #303030;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+header {
+    color: #f0f8ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header img {
+    width: 4rem;
+    margin: 0;
+}
+
+nav.desktop {
+    margin-left: 1rem;
+    display: flex;
+    flex-wrap: nowrap;  
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #f0f8ff;
+    position: relative;
+    font-size: 1rem; 
+}
+
+header a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(130, 130, 130, 0.5));
+    position: absolute;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+header a:hover::after {
+    width: 80%;
+}
+
+.text_conteiner {
+    flex: 1;
+}
+
+.text {
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    text-align: justify;
+    padding: 1.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(130, 130, 130, 0.5));
+    color: #000000;
+    font-weight: 600;
+}
+
+.text p {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+
+.minha_foto {
+    border-radius: 50%;
+    width: 18.75rem;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(130, 130, 130, 0.5));
+    height: 18.75rem;
+    object-fit: cover;
+}
+
+.foto {
+    flex: 0 0 auto;
+}
+
+.box_sobre {
+    background-color: #f0f0f0;
+    padding: 1.2rem;
+}
+
+.main_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    max-width: 1200px;
+    background-color: rgb(63, 61, 61);
+    color: aliceblue;
+    padding: 2rem;
+    margin-bottom: 0.6rem;
+    border-radius: 0.6rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1.2rem;
+}
+
+.corzinha {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(130, 130, 130, 0.5));
+    font-size: 3rem;
+    padding-bottom: 1.2rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.main_box h1 {
+    padding-bottom: 1.2rem;
+}
+
+.main_box button {
+    border: none;
+    border-radius: 20%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(130, 130, 130, 0.5));
+}
+
+.main_box button img {
+    width: 100%;
+    height: 100%;
+}
+
+.main_box button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+nav.desktop a {
+    margin-right: 3rem;
+    text-decoration: none;
+    color: #f0f8ff;
+}
+
+.caixa {
+    width: 75%;
+    max-width: 1200px;
+    align-items: center;
+    margin: 10px;
+    background-color: #252525;
+    color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.caixaheader {
+    color: #f0f8ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #252525;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.botao {
+    margin-right: 2rem;
+}
+
+.outra_div {
+    width: 75%;
+    max-width: 1200px;
+    background-color: #f0f0f0;
+    color: #252525;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.habilidades button {
+    width: 5rem;
+    height: 5rem;
+}
+
+.habilidades button:hover {
+    background: rgba(255, 255, 255, 0.596);
+}
+
+.contatos {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contatos img {
+    border: none;
+    border-radius: 20%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(130, 130, 130, 0.5));
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.contact-info p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+
+
+@media (max-width: 1200px) {
+    .main_box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .main_box button {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    nav.desktop a {
+        margin-right: 1rem;
+        font-size: 0.9rem; 
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .minha_foto {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .text_conteiner {
+        text-align: center;
+    }
+
+    .text p {
+        font-size: 1rem;
+    }
+
+    .habilidades {
+        align-items: center;
+    }
+
+    .habilidades button {
+        width: 8rem; 
+        height: 8rem; 
+    }
+
+    .contatos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+
+    .contact-info {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .buttons-container {
+        margin-top: 2rem;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .main_box {
+        width: 95%;
+    }
+
+    .caixaheader {
+        width: 95%;
+    }
+
+    nav.desktop a {
+        font-size: 0.8rem; 
+    }
+
+    .text p {
+        font-size: 0.9rem;
+    }
+
+    .minha_foto {
+        margin-top: 2rem;
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .corzinha {
+        font-size: 2rem;
+    }
+
+    .habilidades button {
+        width: 6rem; 
+        height: 6rem; 
+    }
+
+    .contatos {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .contact-info {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+}
